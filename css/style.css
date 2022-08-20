@@ -1,0 +1,112 @@
+html,body{
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    color: #404040;
+    line-height: 1.5;
+}
+
+/* INDEX */
+/* Header */
+.header{
+    padding: 0;
+    transition: all 0.4s ease 0s;
+    height: 100px;
+    border-bottom: 1px solid rgba(231, 231, 231, 0.18);
+}
+
+.fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.header .navbar-expand-lg .navbar-collapse{
+    justify-content: space-between;
+}
+
+.header .navbar-brand{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    display: inline-block;
+}
+
+.header .navbar-brand i{
+    color: #009f4d;
+    vertical-align: bottom;
+}
+
+.header .navbar-brand .logo{
+    text-transform: none;
+    display: block;
+    font-size: 14px;
+    padding-left: 46px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.header .navbar-light .navbar-toggler{
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.header .navbar-collapse .navbar-nav .nav-item{
+    padding: 0 12px;
+    transition: all 0.5s ease;
+}
+
+.header .navbar-collapse .navbar-nav .nav-link{
+    transition: all 0.5s ease;
+    padding: 14px 0 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+.header .navbar-collapse .navbar-nav .nav-link.active{
+    color: #fff;
+    opacity: 1;
+}
+
+.header .navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #fff;
+    opacity: 1;
+}
+
+.header .search{
+    cursor: pointer;
+}
+
+.header .search .btn-material{
+    line-height: 45px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: #009f4d;
+    outline: 0;
+    transform-origin: 50%;
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header .search .icon-marterial-search{
+    color: #fff;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.header .theme-switch{
+    width: 24px;
+    height: 24px;
+    padding: 1px 0;
+    color: #fff;
+    font-size: 24px;
+    margin-top: 2px;
+}
+
+.slideshow .container-fluid{
+    padding: 0;
+}
