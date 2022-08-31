@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .header .navbar-expand-lg .navbar-collapse{
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .header .navbar-brand{
@@ -1108,6 +1108,10 @@ h1, h2, h3, h4, h5, h6{
     line-height: 28px;
 }
 
+.about-block .grids-feature{
+    margin-bottom: 20px;
+}
+
 .about-block .btn-style{
     color: #fff;
     background-color: #00a63f;
@@ -1784,7 +1788,6 @@ h1, h2, h3, h4, h5, h6{
 
 .blog-portfolio .container .tab-content .item img{
     width: 100%;
-    height: 200px;
     display: block;
 	transition: all 0.3s ease;
 }
@@ -1845,19 +1848,28 @@ h1, h2, h3, h4, h5, h6{
     color: #00a63f;
 }
 
+.blog-portfolio .nav-pills .nav-link.active, .blog-portfolio .nav-pills .show>.nav-link{
+    background-color: #009f4d;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+    border: 2px solid #009f4d;
+}
+
+.blog-portfolio .nav-pills .nav-link{
+    border: 2px solid #eee;
+    color: #666;
+    font-weight: 600;
+}
+
 /* 404 PAGE */
 .error-page {
     background-color:#f8f9fa ;
 }
 
 .error-page .container{
-    max-width: 900px;
-    padding: 50px 0;
-}
-
-.error-page .container .row {
-    display: grid;
-    grid-template-columns: repeat( 2,1fr);
+    padding: 0 200px;
 }
 
 .error-page .container .item{
@@ -1958,10 +1970,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .contact-info .container .row{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin: 0 30px;
+    margin: 15px;
     align-items: center;
 }
 
@@ -1969,6 +1978,7 @@ h1, h2, h3, h4, h5, h6{
     background-color: #fff;
     padding: 30px;
     box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+    margin: 15px 0;
 }
 
 .contact-info .container .row .item i{
@@ -1992,7 +2002,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .contact-map .container{
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .contact-map .container .map{
@@ -2005,10 +2015,6 @@ h1, h2, h3, h4, h5, h6{
 .contact-form,
 .contact-map{
     background-color: #f8f9fa;
-}
-
-.contact-form .container{
-    padding: 48px 160px;
 }
 
 .contact-form .title{
@@ -2064,6 +2070,7 @@ h1, h2, h3, h4, h5, h6{
    color: #fff;
    font-weight: 600;
    transition: all 0.5s;  
+   margin-bottom: 50px;
 }
 
 .contact-form .submit button:hover{
@@ -2182,4 +2189,190 @@ h1, h2, h3, h4, h5, h6{
 
 .footer .copyright .copy-footer a:hover{
     color: #fff;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1200px){
+    .about-block .bg-shape{
+        width: 450px;
+        height: 450px;
+    }
+
+    .project-contact .btn-style{
+        display: block;
+        padding: 15px 40px;
+    }
+
+    .about-block h4 a.title-head{
+        font-size: 20px;
+    }
+
+    .error-page .container{
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .header .navbar-toggler-icon{
+        width: 24px;
+        height: 34px;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+        line-height: 34px;
+        background-image: none;
+        display: inline-block;
+    }
+
+    .navbar-toggler{
+        background-color: #009f4d;
+    }
+
+    .slideshow .carousel .carousel-caption h1{
+        font-size: 40px;
+    }
+
+    .slideshow .carousel .carousel-caption p{
+        font-size: 18px;
+    }
+
+    .navbar-nav{
+        float: left;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0 0;
+    }
+
+    .header .navbar-collapse .navbar-nav .nav-link{
+        color: #3f3a64;
+        opacity: 0.7;
+    }
+
+    .header .navbar-collapse .navbar-nav .nav-link.active{
+        color: #009f4d;
+        opacity: 0.9;
+    }
+
+    .navbar-collapse{
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+    }
+
+    .header .navbar-expand-lg .navbar-nav .dropdown-menu{
+        position: absolute;
+        width: 100%;
+        left: 50px;
+        text-align: center;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        display: none;
+    }
+
+    .slideshow .carousel .carousel-caption{
+        top: 100px;
+    }
+
+    .project-contact .btn-style{
+        display: inline-block;
+        padding: 15px 40px;
+    }
+
+    .about-block .bg-shape{
+        width: 500px;
+        height: 500px;
+    }
+
+    .solutions h4 a.title-head{
+        font-size: 20px;
+    }
+
+    .about-breadcrumb .breadcrumb-content{
+        top: 60px;
+    }
+
+    .contact-form .submit{
+        grid-column: 1 /span 2;
+        text-align: center;
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .error-page .container{
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .slideshow .carousel .carousel-caption h1{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .slideshow .carousel .carousel-caption p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .carousel-caption{
+        bottom: 0;
+        padding-top: 0;
+    }
+
+    .slideshow .carousel .carousel-caption{
+        top: 120px;
+    }
+
+    .slideshow .carousel .carousel-caption .cta-btn{
+        padding-top: 15px;
+    }
+
+    .slideshow .carousel .carousel-caption .cta-btn a{
+        padding: 10px 30px;
+    }
+
+    .about4 .heading{
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .slideshow .carousel .carousel-caption h1{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .slideshow .carousel .carousel-caption p{
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+
+    .slideshow .carousel .carousel-caption .cta-btn{
+        padding-top: 10px;
+    }
+
+    .slideshow .carousel .carousel-caption .cta-btn a{
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+
+    .project h3.title-big{
+        font-size: 28px;
+    }
+
+    .about4 .heading{
+        max-width: 500px;
+    }
+
+    .about4 h3{
+        font-size: 30px;
+    }
+
+    .about-breadcrumb h2.title{
+        font-size: 35px;
+    }
 }
